@@ -6,20 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steve's FinalAssessment</title>
     <link rel="shortcut icon" type="image/png" href="https://www.favicon.cc/logo3d/577459.png"/>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Welcome to Barta!</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <!--STEP 3:  ADD A DARK NAVBAR HERE WITH YOUR NAME IN THE TOP LEFT.  
+            Also, create a link in the navbar TO the HTML file that you made in the HTML assessment -->
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Barta</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="FinalAssessment.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="file:///Users/student/SteveZLeke/FinalAssessment.html#Donate">Contribute To The Cause</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    <h1 class="ms-5">Welcome to Barta!</h1>
     <br>
-    <h2>Take Action Against The Faction</h2>
+    <h2 class="ms-5">Take Action Against The Faction</h2>
 
-    <p>The world is in danger. A secret government known as the cabal is plotting to take over the nation and infringe upon the
+    <p class="ms-5">The world is in danger. A secret government known as the cabal is plotting to take over the nation and infringe upon the
     your civil liberties and those of all Americans. They plan to kill democracy and turn the US into a complete aristocracy. 
     You must join Barta now, to take action against the faction.
     </p>
     <br>
-    <h2>Benefits of Barta Members</h2>
-    <ol>
+    <h2 class="ms-5">Benefits of Barta Members</h2>
+    <ol class="ms-5">
         <li>A Worth While Purpose</li>
             <ul>
                 <li>Take Down the Cabal</li>
@@ -34,16 +58,17 @@
             </ul>
     </ol>
     <br>
-    <img 
+    <img class="ms-5" 
     src="https://upskill.io/wp-content/uploads/2016/04/black-and-white-photo-of-people-sitting-at-table.jpg"  
     width="320" height="280" alt="Cabal Meeting">
 
     <!-- style="  display: block; margin-left: auto; margin-right: auto; width: 50%;"  -->
+    <br>
+    <br>
+    <h3 class="ms-5">Please enter your information to join Barta and fight back aginst the faction.</h2>
+    <p class="ms-5">Please Note: First Name, Last Name, Password, and Email are required</p>
 
-    <h3>Please enter your information to join Barta and fight back aginst the faction.</h2>
-    <p>Please Note: First Name, Last Name, Password, and Email are required</p>
-
-        <form method="get">
+        <form class="ms-5" method="get">
 
           <label for="FirstName">First Name:</label>
           <input type="text" id="FirstName" placeholder="First Name" required>
@@ -67,7 +92,7 @@
 
         <h3>You must now enter the credit card information you will need to pay your daily dues.</h3>
         <!-- <h1>You are about to get scammed hard. Don't worry it'll be okay.</h1> -->
-
+        <div name="anchor" id="Donate">
           <p>What is your credit card type?</p>
           <select name="payment" required>
             <option value="cc">Mastercard</option>
@@ -93,7 +118,8 @@
           <p></p>
           <input type="submit" name="" value="Submit Feedback">
 
-
+        </div>
         </form>
+    
 </body>
 </html>
